@@ -1,0 +1,77 @@
+/* Input scss de variables */
+* {
+  font-family: "Nanum Gothic", serif;
+  font-weight: lighter;
+}
+
+header {
+  background-color: #70bbec;
+}
+header .logo {
+  display: flex;
+  background-color: white;
+  width: 100%;
+  height: 4cm;
+  justify-content: center;
+}
+header h1 {
+  display: flex;
+  font-size: 40px;
+  padding-top: 100px;
+  padding-bottom: 20px;
+  justify-content: center;
+}
+header h2 {
+  display: flex;
+  font-size: 26px;
+  justify-content: center;
+}
+header h3 {
+  display: flex;
+  font-size: 24px;
+  padding-top: 60px;
+  padding-bottom: 30px;
+  justify-content: center;
+}
+
+/* Grids de imagenes de index y paginas */
+.flex-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: white;
+  justify-content: center;
+  gap: 5px;
+  width: 100vw;
+  justify-items: center;
+}
+@media screen and (max-width: 480px) {
+  .flex-container {
+    grid-template-columns: 1fr;
+    gap: 1px;
+  }
+}
+.flex-container .item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 33vw;
+  border: 1px solid rgb(211, 211, 211);
+  align-content: center;
+  padding: 1%;
+}
+
+/* media query de items en celular */
+@media screen and (max-width: 480px) {
+  .flex-container .item {
+    width: 100vw;
+  }
+}
+footer ul {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 12px;
+  text-decoration: underline;
+  list-style: none;
+  text-align: center;
+}
+
+/*# sourceMappingURL=style.css.map */
